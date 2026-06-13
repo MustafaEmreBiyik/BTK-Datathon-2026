@@ -4,8 +4,8 @@
 > Son güncelleme: 10 Haziran 2026
 
 ## Durum özeti
-- **Aşama:** Kurulum / EDA başlangıcı.
-- **En iyi lokal CV:** — (henüz yok)
+- **Aşama:** Gün 4 — Full experiment notebook hazır, çalıştırılacak.
+- **En iyi lokal CV:** 82.36 (LightGBM + FE + text stats, notebook 01)
 - **Yapılan submission sayısı (bugün):** 0 / 5
 - **Doğrulanmış metrik:** ✅ **MSE** (Mean Squared Error). CV'de MSE raporla, tahminleri [0,100] clip et.
 
@@ -54,12 +54,16 @@
 ## 📊 Submission kayıt defteri
 | # | Tarih | Açıklama (model/feature) | Lokal CV | Public LB | Final aday? |
 |---|-------|--------------------------|----------|-----------|-------------|
-|   |       |                          |          |           |             |
+| 1 | 10 Haz | LightGBM baseline (notebook 01) | 83.83 | — | hayır |
 
 ## 📈 CV deney kayıt defteri
 | Deney | Model | Önemli değişiklik | CV skoru | Not |
 |-------|-------|-------------------|----------|-----|
-|       |       |                   |          |     |
+| 01 | Mean baseline | — | 230.65 | referans |
+| 02 | LightGBM | baseline | 83.83 | → submission |
+| 03 | LightGBM | + ratio/agg FE | 83.61 | küçük iyileşme |
+| 04 | LightGBM | + text stats (keyword sentiment) | 82.36 | en iyi şu an |
+| 05 | **02_full_experiment.ipynb** | isna flags + FE++ + TF-IDF OOF + LGBM+XGB+CB + ensemble | **çalıştırılacak** | hedef <78 |
 
 ## 🧠 Kararlar / öğrenilenler
 - (Buraya "şunu denedik, çünkü..., sonuç..." notları yaz. Jüri sunumunun hammaddesi burası olacak.)
